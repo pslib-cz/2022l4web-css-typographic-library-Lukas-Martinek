@@ -1,7 +1,7 @@
 # Typography CSS library
 **Author:** *First Lastname*
 ## Demo site
-Link to **[demo](http://www.github.io)** site for preview.
+Link to **[demo](http://pslib.czwww.github.io/2022l4web-css-typographic-library-Lukas-Martinek)** site for preview.
 ## Dependecies
 ...
 ## Implementation
