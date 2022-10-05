@@ -1,6 +1,6 @@
 :root {
-    --black: rgb(14, 14, 14);
-    --gray: rgb(199, 199, 199);
+    --black: rgb(49, 49, 49);
+    --gray: rgb(233, 233, 233);
 }
 html {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -68,10 +68,10 @@ th {
     color: white;
 }
 td {
-    background-color: rgb(226, 226, 226);
+    background-color: var(--gray);
 }
 .colored-gray {
-    background-color: rgb(199, 199, 199);
+    background-color: var(--gray);
 }
 .colored-black {
     background-color: var(--black);
