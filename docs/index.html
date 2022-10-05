@@ -6,25 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Demo</title>
     <link href="./css/style.css" rel="stylesheet">
+    <link href="./css/media.css" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav>
             <ul class="navbar">
-                <li><a href="#">Headings</a></li>
-                <li><a href="#">Text</a></li>
-                <li><a href="#">Lists</a></li>
-                <li><a href="#">Table</a></li>
-                <li><a href="#">Buttons</a></li>
-                <li><a href="#">Gallery</a></li>
+                <li><a href="#Headings">Headings</a></li>
+                <li><a href="#Text">Text</a></li>
+                <li><a href="#Lists">Lists</a></li>
+                <li><a href="#Table">Table</a></li>
+                <li><a href="#Buttons">Buttons</a></li>
+                <li><a href="#Images">Images</a></li>
             </ul>
         </nav>
-        <div class="header-opening">
-            <h1>Typographic library</h1>
+        <div class="header__opening">
+        <h1>Typographic library</h1>
         </div>
     </header>
     <main>
-        <section class="colored-gray">
+        <section id="Headings" class="colored-gray">
             <h2>Headings</h2>
             <h2 class="text-h1">Heading 1.</h2>
             <h2>Heading 2.</h2>
@@ -32,12 +33,12 @@
             <h4>Heading 4.</h4>
             <h5>Heading 5.</h5>
         </section>
-        <section>
+        <section id="Text">
             <h2>Text</h2>
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Integer tempor. Cras elementum. Aliquam erat volutpat. Nam quis nulla. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
             <p><b>Bold text</b>, <i>italic text</i>, <span class="underline">underlined text</span>, <s>striked text</s>, <mark>marked text</mark>, <a href="#">link</a> and <small>small</small></p>
         </section>
-        <section class="colored-black">
+        <section id="Lists" class="colored-black">
             <h2>Lists</h2>
             <h3>Unordered list</h3>
             <ul>
@@ -60,7 +61,7 @@
                 <li>Example</li>
             </ol>
         </section>
-        <section>
+        <section id="Table">
             <h2>Table</h2>
             <table>
                 <tr><th>Name</th><th>Born in</th><th>Wealth</th></tr>
@@ -68,11 +69,47 @@
                 <tr><td>Elon Musk</td><td>South African Republic</td><td>1 kč</td></tr>
             </table>
         </section>
-        <section>
+        <section id="Buttons">
             <h2>Buttons</h2>
         </section>
-        <section>
-            <h2>Gallery</h2>
+        <section id="Images">
+            <h2>Images</h2>
+            <h3>Single image</h3>
+            <figure class="gallery__item">
+                <a href="./img/image_1.jpg">
+                    <img src="./img/image_1.jpg">
+                    <figcaption>
+                        imagine caption
+                    </figcaption>
+                </a>
+            </figure>
+            <h3>Gallery</h3>
+            <div class="gallery">
+                <figure class="gallery__item">
+                    <a href="./img/image_1.jpg">
+                        <img src="./img/image_1.jpg">
+                        <figcaption>
+                            imagine caption
+                        </figcaption>
+                    </a>
+                </figure>
+                <figure class="gallery__item">
+                    <a href="./img/image_1.jpg">
+                        <img src="./img/image_1.jpg">
+                        <figcaption>
+                            imagine caption
+                        </figcaption>
+                    </a>
+                </figure>
+                <figure class="gallery__item">
+                    <a href="./img/image_1.jpg">
+                        <img src="./img/image_1.jpg">
+                        <figcaption>
+                            imagine caption
+                        </figcaption>
+                    </a>
+                </figure>
+            </div>
         </section>
     </main>
     <footer>

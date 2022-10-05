@@ -1,6 +1,7 @@
 :root {
     --black: rgb(49, 49, 49);
     --gray: rgb(233, 233, 233);
+    --white: rgb(255, 255, 255);
 }
 html {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -13,24 +14,22 @@ body {
     padding-left: 0;
     text-transform: uppercase;
     font-weight: 600;
+    position: relative;
 }
 .navbar li {
     display: inline-block;
     margin-right: 2em;
 }
 nav {
-    background-color: var(--black);
+    background-color: var(--white);
     padding: 1em;
-    color: white;
     text-align: center;
 }
 h1 {
-    padding-left: 6em;
-    padding-top: 3em;
-    padding-bottom: 3em;
-}
-h1 {
+    text-align: center;
     font-size: 35px;
+    margin: 0;
+    padding: 1.3em;
 }
 h2 {
     font-size: 30px;
@@ -96,6 +95,31 @@ mark {
     color: white;
 }
 .navbar a {
-    color: white;
+    color: black;
     text-decoration: none;
 }
+.gallery__item img {
+    width: 100%;
+}
+.gallery__item {
+    text-align: center;
+    max-width: 700px;
+}
+.header__opening {
+ background-image: url(../img/forest.webp);
+ background-position: center;
+ position: relative;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 500px;
+}
+
+
+h1 {
+    display: inline-block;
+    background-color: var(--gray) ;
+    border: 7px solid rgb(214, 214, 214);
+    text-transform: uppercase;
+    color: rgb(24, 24, 24);
+ }
