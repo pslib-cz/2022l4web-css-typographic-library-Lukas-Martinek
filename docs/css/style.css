@@ -61,6 +61,7 @@ h5 {
 .text-h1 {
     font-size: 35px;
     font-weight: 600;
+    text-transform: uppercase;
 }
 
 .underline {
@@ -88,7 +89,7 @@ td {
     color: white;
 }
 section {
-    padding-left: 3em;
+    padding-left: 80px;
     padding-top: 1em;
     padding-bottom: 1em;
 }
@@ -113,13 +114,14 @@ mark {
     max-width: 700px;
 }
 .header__opening {
- background-image: url(../img/forest.webp);
+ background-image: url(../img/forest_fog.jpg);
  background-position: center;
  position: relative;
  display: flex;
  justify-content: center;
  align-items: center;
  height: 500px;
+ background-size: cover;
 }
 
 
@@ -130,3 +132,23 @@ h1 {
     text-transform: uppercase;
     color: rgb(24, 24, 24);
  }
+header nav {
+    max-width: 1000px;
+}
+.gallery__item figcaption {
+    color: white;
+    background-color: var(--black);
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    width: auto;
+    padding: 0.5em;
+    opacity: 0;
+}
+.gallery__item a {
+   text-decoration: none;
+}
+.gallery__item:hover figcaption {
+    opacity: 100%;
+    transition: 0.3s;
+}
