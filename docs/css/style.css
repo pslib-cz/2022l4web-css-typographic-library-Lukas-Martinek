@@ -1,7 +1,10 @@
 :root {
     --black: rgb(49, 49, 49);
+    --lightgray: rgb(244,244,244);
     --gray: rgb(233, 233, 233);
     --white: rgb(255, 255, 255);
+    --darkgray: rgb(155, 155, 155);
+    
 }
 html {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -36,6 +39,7 @@ body {
     left: 0;
     width: 100%;
 }
+
 h1 {
     text-align: center;
     font-size: 35px;
@@ -45,6 +49,8 @@ h1 {
 h2 {
     font-size: 30px;
     font-weight: 500;
+    padding-left: 10px;
+    border-left: 2px solid black;
 }
 h3 {
     font-size: 25px;
@@ -62,6 +68,8 @@ h5 {
     font-size: 35px;
     font-weight: 600;
     text-transform: uppercase;
+    padding: 0;
+    border: none;
 }
 
 .underline {
@@ -81,12 +89,9 @@ th {
 td {
     background-color: var(--gray);
 }
-.colored-gray {
+
+.section-colored {
     background-color: var(--gray);
-}
-.colored-black {
-    background-color: var(--black);
-    color: white;
 }
 section {
     padding-left: 80px;
@@ -151,4 +156,25 @@ header nav {
 .gallery__item:hover figcaption {
     opacity: 100%;
     transition: 0.3s;
+}
+footer p {
+    margin-bottom: 0;
+    color: var(--darkgray);
+}
+footer {
+    padding: 20px;
+    color: white;
+}
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 60px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+}
+footer a {
+    color: white;
+}
+footer a:hover {
+    color:  var(--darkgray);
 }
