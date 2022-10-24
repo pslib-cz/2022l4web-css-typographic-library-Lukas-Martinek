@@ -94,12 +94,10 @@ td {
     background-color: var(--gray);
 }
 section {
-    padding-left: 80px;
-    padding-top: 1em;
-    padding-bottom: 1em;
+padding: 10px 40px;
 }
 p {
-    max-width: 1200px;
+    max-width: 1000px;
 }
 footer {
     background-color: rgb(12, 12, 12);
@@ -113,10 +111,7 @@ mark {
 }
 .gallery__item img {
     width: 100%;
-}
-.gallery__item {
-    text-align: center;
-    max-width: 700px;
+    max-width: 650px;
 }
 .header__opening {
  background-image: url(../img/forest_fog.jpg);
@@ -140,23 +135,6 @@ h1 {
 header nav {
     max-width: 1000px;
 }
-.gallery__item figcaption {
-    color: white;
-    background-color: var(--black);
-    bottom: 0%;
-    left: 0%;
-    right: 0%;
-    width: auto;
-    padding: 0.5em;
-    opacity: 0;
-}
-.gallery__item a {
-   text-decoration: none;
-}
-.gallery__item:hover figcaption {
-    opacity: 100%;
-    transition: 0.3s;
-}
 footer p {
     margin-bottom: 0;
     color: var(--darkgray);
@@ -168,7 +146,7 @@ footer {
 .footer__container {
     display: flex;
     justify-content: space-between;
-    padding-left: 60px;
+    padding-left: 20px;
     flex-wrap: wrap;
     max-width: 1200px;
 }
@@ -177,4 +155,30 @@ footer a {
 }
 footer a:hover {
     color:  var(--darkgray);
+}
+figure {
+    margin: 0;
+    margin-bottom: 1em;
+    position: relative;
+    overflow: hidden;
+}
+figcaption {
+    position: absolute;
+    bottom: 84.5%;
+    left: 0;
+    color: white;
+    background-color: var(--black);
+    width: 100%;
+    padding-top: 1.2em;
+    padding-bottom: 1.2em;
+    text-align: center;
+    opacity: 0;
+
+}
+figure:hover figcaption {
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+}
+section > figure:hover figcaption{
+    bottom: 87%;
 }
