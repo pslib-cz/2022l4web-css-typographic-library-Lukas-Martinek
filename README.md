@@ -10,9 +10,8 @@ portfolio.css is CSS typhographic library which you can download for free. It wa
 3. [Types of text](#Text)
 4. [Lists](#Lists)
 5. [Table](#Table)
-9. [Buttons](#Buttons)
-10. [Pictures](#Pictures)
-12. [Sections](#sections)
+6. [Buttons](#Buttons)
+7. [Images](#Images)
 ## Implementation
 1. Download file **[portfolio.css](https://github.com/pslib-cz/2022l4web-css-typographic-library-Lukas-Martinek/blob/master/portfolio.css)**
 2. Put file in your project file
