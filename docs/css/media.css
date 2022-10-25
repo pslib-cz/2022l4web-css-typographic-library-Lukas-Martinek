@@ -1,25 +1,42 @@
 @media (min-width: 750px) {
-    section {
-        padding: 10px 80px;
-    }
     footer {
         padding: 10px 60px;
+    }
+    h1 {
+        font-size: 50px;
+    }
+    .header__opening {
+        height: 650px;
+        background-position: top;
     }
 }
 @media (min-width: 960px) {
     .gallery img {
-        max-width: 500px;
+        max-width: 370px;
     }
     .gallery {
         display: flex;
         flex-wrap: wrap;
-    }
-    .gallery figure {
-        margin-bottom: 1em;
-        margin-right: 2em;
+        justify-content: space-around;
     }
     section > figure figcaption{
         width: 650px;
     }
     
 }
+@media (min-width: 1318px) {
+    .navbar-menu {
+        padding-right: 0;
+    }
+    nav {
+        padding-left: 0;
+        padding-right: 0;
+    }
+ }
+ @media (min-width: 1440px) {
+    section {
+        padding: 10px 0;
+    }
+
+
+ }
