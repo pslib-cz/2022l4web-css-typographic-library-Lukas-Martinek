@@ -16,7 +16,7 @@ portfolio.css is CSS typhographic library which you can download for free. It wa
 10. [Pictures](#Pictures)
 12. [Sections](#sections)
 ## Implementation
-1. Download file **[portfolio.css](https://pslib-cz.github.io/2022l4web-css-typographic-library-Lukas-Martinek/)**
+1. Download file **[portfolio.css](https://github.com/pslib-cz/2022l4web-css-typographic-library-Lukas-Martinek/blob/master/portfolio.css)**
 2. Put file in your project file
 3. Link file into your code
     <link href="portfolio.css" rel="stylesheet">
