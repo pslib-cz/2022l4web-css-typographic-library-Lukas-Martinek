@@ -176,10 +176,10 @@ figure {
 }
 figcaption {
     position: absolute;
-    background-color: var(--lightgray);
+    background-color: var(--black);
     top: 0%;
     padding: 1em;
-    color: black;
+    color: white;
     font-size: 1.05em;
     opacity: 0;
     transition: 0.2s all ease-in-out;

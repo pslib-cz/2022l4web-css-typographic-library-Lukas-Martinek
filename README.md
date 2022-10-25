@@ -43,3 +43,58 @@ For lists we use this syntax
 ```
 ## Table
 Basic table is created from 3 tags - th, td and tr. Th is used for headings, td is table cell and tr is table row
+```html
+<tr><th>Heading</th><th>Head</th><th>Head</th></tr>
+<tr><td>Cell</td><td>Cell</td><td>Cell</td></tr>
+<tr><td>Cell</td><td>Cell</td><td>Cell</td></tr>
+```
+## Buttons
+There are 4 types of buttons. Always use tag a and add class button - this is basic one. Then you can add other classes for different types of buttons.
+* Basic - .button
+* Reversed - .button .btn-reversed
+* Red - .button .btn-red
+* Blue - .button .btn-blue
+```html
+<a href="" class="button btn-red">Text</a>
+```
+## Images
+If you want to put just one picture, use this syntax:
+```html
+<figure class="gallery__item">
+    <a href="./img/example_1.jpg">
+        <img alt="" src="./img/example_1.jpg">
+            <figcaption>
+                Imagine caption
+            </figcaption>
+    </a>
+</figure>
+```
+If you want to create gallery of pictuer, you need to put div with class gallery first
+```html
+<div class="gallery">
+                <figure class="gallery__item">
+                    <a href="./img/example_1.jpg">
+                        <img alt="" src="./img/example_1.jpg">
+                        <figcaption>
+                            Imagine caption
+                        </figcaption>
+                    </a>
+                </figure>
+                <figure class="gallery__item">
+                    <a href="./img/example_2.jpg">
+                        <img alt="" src="./img/example_2.jpg">
+                        <figcaption>
+                            Imagine caption
+                        </figcaption>
+                    </a>
+                </figure>
+                <figure class="gallery__item">
+                    <a href="./img/banner.jpg">
+                        <img alt="" src="./img/banner.jpg">
+                        <figcaption>
+                            Imagine caption
+                        </figcaption>
+                    </a>
+                </figure>
+            </div>
+```
