@@ -79,10 +79,6 @@
 .hamburger-nav li:nth-child(even) {
     background-color: rgba(0, 0, 0, 0.1);
 }
-.hamburger-nav li:hover {
-    background-color: rgba(0, 0, 0, 0.6);
-    color: white;
-}
 
 @media screen and (min-width: 1101px) {
     .hamburger-row {

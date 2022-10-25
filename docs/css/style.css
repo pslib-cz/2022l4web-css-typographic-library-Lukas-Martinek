@@ -5,6 +5,7 @@
     --gray: rgb(233, 233, 233);
     --white: rgb(255, 255, 255);
     --darkgray: rgb(49, 49, 49);
+    --orange: rgb(233, 131, 84);
     
 }
 html {
@@ -44,10 +45,16 @@ header {
     left: 0;
     width: 100%;
 }
+a {
+    color: var(--orange);
+}
+a:hover {
+    color: var(--darkgray);
+}
 
 h1 {
     text-align: center;
-    font-size: 50px;
+    font-size: 33px;
     margin: 0;
     padding: 1.3em;
 }
@@ -88,11 +95,11 @@ th, td {
     padding: 0.5em;
 }
 th {
-    background-color: var(--black);
+    background-color: var(--darkgray);
     color: white;
 }
 td {
-    background-color: var(--gray);
+    background-color: var(--lightgray);
 }
 
 section {
@@ -108,7 +115,7 @@ b {
     font-weight: 700;
 }
 mark {
-    background-color: rgb(46, 46, 46);
+    background-color: var(--orange);
     color: white;
 }
 .gallery__item img {
@@ -165,26 +172,20 @@ figure {
     margin-bottom: 1em;
     position: relative;
     overflow: hidden;
+    max-width: 650px;
 }
 figcaption {
     position: absolute;
-    bottom: 84.5%;
-    left: 0;
-    color: white;
-    background-color: var(--black);
-    width: 100%;
-    padding-top: 1.2em;
-    padding-bottom: 1.2em;
-    text-align: center;
+    background-color: var(--lightgray);
+    top: 0%;
+    padding: 1em;
+    color: black;
+    font-size: 1.05em;
     opacity: 0;
-
+    transition: 0.2s all ease-in-out;
 }
 figure:hover figcaption {
     opacity: 1;
-    transition: all 0.3s ease-in-out;
-}
-section > figure:hover figcaption{
-    bottom: 87%;
 }
 .navbar-logo {
     display: block;
