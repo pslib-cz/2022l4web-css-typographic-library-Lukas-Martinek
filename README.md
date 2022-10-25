@@ -6,12 +6,10 @@ Link to **[demo](https://pslib-cz.github.io/2022l4web-css-typographic-library-Lu
 portfolio.css is CSS typhographic library which you can download for free. It was created for school project. If you have finished code and dont want to waste time, you can use my project. portfolio.css is styling headings, text markups, lists, tables, buttons and images.
 ## Content of the documentation
 1. [Implementation](#Implementation)
-3. [Headings](#Headings)
-4. [Types of text](#Types-of-text)
-6. [Lists](#Lists)
-    1. [Unordered list](#Unordered-list)
-    2. [Ordered list](#Ordered-list)
-7. [Table](#Table)
+2. [Headings](#Headings)
+3. [Types of text](#Text)
+4. [Lists](#Lists)
+5. [Table](#Table)
 9. [Buttons](#Buttons)
 10. [Pictures](#Pictures)
 12. [Sections](#sections)
@@ -27,5 +25,21 @@ There are 5 headings tags which you can use:
 * 30px for `<h3>`
 * 25px for `<h4>`
 * 20px for `<h5>`
-##
-### Second
+## Text
+Modified tags: `<b>`, `<i>`, `<s>`, `<mark>`
+If you want to underline text, use span with class "underlined"
+## Lists
+For lists we use this syntax
+```html
+<ul>
+    <li>Example</li>
+    <li>Example
+        <ul>
+            <li>Example</li>
+            <li>Example</li>
+        </ul>
+    </li>
+</ul>
+```
+## Table
+Basic table is created from 3 tags - th, td and tr. Th is used for headings, td is table cell and tr is table row
