@@ -1,0 +1,110 @@
+.hamburger {
+    --rotate-time: .15s;
+    --move-time: .1s;
+}
+
+.hamburger {
+    width: 60px;
+    height: 45px;
+    position: absolute;
+    top: 3%;
+    right: 2%;
+
+}
+  
+.hamburger span {
+    position: absolute;
+    height: 9px;
+    width: 100%;
+    background: white;
+    border-radius: 4.5px;
+    left: 0;
+}
+
+.hamburger span:nth-child(1) { top: 0px; }
+  
+.hamburger span:nth-child(2) { top: 18px; }
+  
+.hamburger span:nth-child(3) { bottom: 0px; }
+
+
+@media screen and (max-width: 1100px) { 
+    .hamburger span {
+        transition: transform ease-in-out 0.33s;
+    }
+    .navbar-menu {
+        list-style: none;
+        padding: 30px 0;
+    }
+    .hamburger-nav {
+        position: absolute;
+        left: -100%;
+        width: 100%;
+        top: 77px;
+        box-sizing: border-box;
+        transition: left ease-in-out 0.33s;
+    }
+    .hamburger-nav.active {
+        left: 0;
+        background-color: var(--black);
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+    }
+}
+.hamburger.active span:nth-child(1)
+{
+    transform: rotate(45deg) ;
+    top: 18px;
+    transition:  ease-in-out 0.33s;
+}
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) ;
+    top: 18px;
+    transition:  ease-in-out 0.33s;
+}
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+.hamburger-row {
+    height: 120px;
+    background-color:var(--black);
+    display: flex;
+    justify-content: flex-end;
+}
+.hamburger {
+    display: block;
+}
+
+.hamburger-nav li:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.hamburger-nav li:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+}
+
+@media screen and (min-width: 1101px) {
+    .hamburger-row {
+        display: none;
+    }
+    .navbar-menu {
+        display: flex;
+        list-style: none;
+        padding: 30px 0;
+        justify-content: flex-end;
+        padding-right: 2em;
+    }
+    .navbar-menu .navbar-link {
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 1.25em;
+        position: relative;
+        padding-bottom: 3px;
+        margin-left: 2em;
+    }
+    header nav {
+        align-items: center;
+    }
+}

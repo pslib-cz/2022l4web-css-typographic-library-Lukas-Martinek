@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,400;0,600;0,700;1,100;1,400;1,600&display=swap');
 :root {
-    --black: rgb(12, 12, 12);
+    --black: rgb(10, 10, 10);
     --lightgray: rgb(244,244,244);
     --gray: rgb(233, 233, 233);
     --white: rgb(255, 255, 255);
@@ -21,13 +21,7 @@ main {
 header {
     background-color: var(--black);
 }
-.navbar-menu {
-    display: flex;
-    list-style: none;
-    padding: 30px 0;
-    justify-content: flex-end;
-    padding-right: 2em;
-}
+
 .navbar-menu .navbar-link {
     color: white;
     text-decoration: none;
@@ -35,7 +29,6 @@ header {
     font-size: 1.25em;
     position: relative;
     padding-bottom: 3px;
-    margin-left: 2em;
 }
 .navbar-menu .navbar-link::after {
     content: "";
@@ -103,13 +96,13 @@ td {
 }
 
 section {
-padding: 10px 40px;
+padding: 15px 40px;
 }
 p {
     max-width: 1000px;
 }
 footer {
-    background-color: rgb(12, 12, 12);
+    background-color: var(--black);
 }
 b {
     font-weight: 700;
@@ -141,7 +134,7 @@ h1 {
  }
 header nav {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     max-width: 1300px;
     margin: auto;
@@ -153,15 +146,13 @@ footer p {
     color: var(--darkgray);
 }
 footer {
-    padding: 20px;
+    padding: 40px;
     color: white;
 }
 .footer__container {
     display: flex;
     justify-content: space-between;
-    padding-left: 20px;
     flex-wrap: wrap;
-    max-width: 1200px;
 }
 footer a {
     color: white;
@@ -201,4 +192,47 @@ section > figure:hover figcaption{
     text-decoration: none;
     font-size: 1.5em;
     letter-spacing: 10px;
+}
+.button {
+    display: inline-block;
+    text-decoration: none;
+    padding: 8px 23px;
+    border: 2px var(--black) solid;
+    color: var(--black);
+    border-radius: 2px;
+    font-size: 1.1em;
+    transition: all 0.2s ease-in-out;
+    outline: none;
+}
+.button:hover {
+    background-color: var(--black);
+    color: white;
+}
+.btn-reversed {
+    background-color: var(--black);
+    color: white;
+}
+.btn-reversed:hover {
+    color: var(--black);
+    background-color: white;
+}
+.btn-red {
+    background-color: rgb(133, 22, 22);
+    color: white;
+    border: 2px solid transparent;
+}
+.btn-red:hover {
+    background-color: rgb(255, 75, 75);
+}
+.btn-blue {
+    background-color: rgb(30, 30, 126);
+    border: 2px solid transparent;
+    color: white;
+}
+.btn-blue:hover {
+    background-color: rgb(83, 83, 238);
+}
+.footer-width {
+    max-width: 1300px;
+    margin: auto;
 }

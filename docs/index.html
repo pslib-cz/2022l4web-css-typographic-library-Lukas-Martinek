@@ -6,11 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Demo</title>
     <link href="./css/style.css" rel="stylesheet">
+    <link href="./css/hamburger.css" rel="stylesheet">
     <link href="./css/media.css" rel="stylesheet">
+    <script src="./hamburger.js"></script>
 </head>
 <body>
     <header>
-            <nav>
+        <div class="hamburger-row">
+            <a href="javascript:void(0)" class="hamburger hamburger-btn hamburger-zone">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </div>
+            <nav class="hamburger-nav hamburger-zone">
                 <div class="navbar-width">
                     <a class="navbar-logo" href=".navbar">portfolio.css</a>
                 </div>
@@ -30,6 +39,7 @@
     <main>
         <section>
             <p>portfolio.css is typhographic CSS library which you can download for free. It was created for school project. All that you need to do is download CSS file and connect it with your already written code. portfolio.css is styling basic tags like </p>
+            <a class="button" href="">Download here</a>
         </section>
         <section id="Headings">
             <h2>Headings</h2>
@@ -77,6 +87,10 @@
         </section>
         <section id="Buttons">
             <h2>Buttons</h2>
+            <a class="button" href="">Text</a>
+            <a class="button btn-reversed">Text</a>
+            <a class="button btn-red">Text</a>
+            <a class="button btn-blue">Text</a>
         </section>
         <section id="Images">
             <h2>Images</h2>
@@ -119,15 +133,18 @@
         </section>
     </main>
     <footer>
-        <div class="footer__container">
-            <div class="container__item">
-                <h3>Contacts</h3>
-                <a href="mailto:lukmart019@pslib.cz" >lukmart019@pslib.cz</a>
-                <p>111 111 111</p>
-            </div>
-            <div class="container__item">
-                <h3>About Project</h3>
-                <p>This typhographic CSS library was created for my school project.</p>
+        <div class="footer-width">
+            <a class="navbar-logo" href="">portfolio.css</a>
+            <div class="footer__container">
+                <div class="container__item">
+                    <h3>Contacts</h3>
+                    <a href="mailto:lukmart019@pslib.cz" >lukmart019@pslib.cz</a>
+                    <p>111 111 111</p>
+                </div>
+                <div class="container__item">
+                    <h3>About Project</h3>
+                    <p>This typhographic CSS library was created for my school project.</p>
+                </div>
             </div>
         </div>
     </footer>

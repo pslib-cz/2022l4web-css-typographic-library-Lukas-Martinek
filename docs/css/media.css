@@ -1,6 +1,6 @@
 @media (min-width: 750px) {
     footer {
-        padding: 10px 60px;
+        padding: 20px 40px;
     }
     h1 {
         font-size: 50px;
@@ -21,21 +21,23 @@
     }
     section > figure figcaption{
         width: 650px;
-    }
-    
+    }   
 }
 @media (min-width: 1318px) {
     .navbar-menu {
         padding-right: 0;
     }
     nav {
-        padding-left: 0;
-        padding-right: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    footer {
+        padding: 40px 10px;
     }
  }
  @media (min-width: 1440px) {
     section {
-        padding: 10px 0;
+        padding: 10px 10px;
     }
 
 
