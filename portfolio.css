@@ -77,7 +77,7 @@ h5 {
     font-weight: 500;
 }
 .text-h1 {
-    font-size: 50px;
+    font-size: 35px;
     font-weight: 600;
     text-transform: uppercase;
     padding: 0;
@@ -237,3 +237,47 @@ figure:hover figcaption {
     max-width: 1300px;
     margin: auto;
 }
+@media (min-width: 750px) {
+    footer {
+        padding: 20px 40px;
+    }
+    h1 {
+        font-size: 50px;
+    }
+    .header__opening {
+        height: 650px;
+        background-position: top;
+    }
+    h1 {
+        font-size: 55px; }
+    table {
+        width: 60%;
+    }
+}
+@media (min-width: 960px) {
+    .gallery img {
+        max-width: 370px;
+    }
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    } 
+}
+@media (min-width: 1318px) {
+    .navbar-menu {
+        padding-right: 0;
+    }
+    nav {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    footer {
+        padding: 40px 10px;
+    }
+ }
+ @media (min-width: 1440px) {
+    section {
+        padding: 10px 10px;
+    }
+  }
